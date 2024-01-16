@@ -2,7 +2,43 @@
 
 # Constraints
 
-Some boundaries around our project.
+
+## Naming conventions:
+
+    Using snake_case with Python:
+    - for constants **CONSTANT**, **MY_CONSTANT**, etc
+    - for classes **ClassName**, **MyClass**, etc
+    - for methods and functions **method_name** or **my_fun**, etc
+    - for parameters, arguments and variables **my_variable**, **my_arg**, **some_parameter**, etc
+
+
+## Type notation is must
+    
+    example:
+
+    class MyClass:
+      # class scope
+
+    
+    # This way everyone will know, includes interpreter the variable my_var has type of MyClass
+    my_var:MyClass = MyClass()
+
+
+    # func do_some has a parameter of integer and string, and MyClass
+    def do_some(number, word, variable):
+      # do something
+    
+    If we will leave it as is someone could pass to number say float, and program will throw an error, and it will require some debugging, etc.
+
+    This is why declaring func parameters we should notate types of parameters like that
+    
+    def do_some(number:int, word:str, variable:MyClass):
+      # do something
+
+
+
+
+
 
 ## External
 
