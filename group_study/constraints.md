@@ -32,8 +32,11 @@
 
     This is why declaring func parameters we should notate types of parameters like that
     
-    def do_some(number:int, word:str, variable:MyClass):
-      # do something
+    def do_some(number:int, word:str, variable:MyClass) -> None:
+      # do something, no return
+
+    def do_some(number:int, word:str, variable:MyClass) -> float:
+      # do something, return something
 
 
 
