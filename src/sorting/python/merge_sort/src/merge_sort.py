@@ -20,7 +20,18 @@ def merge_sort(list_to_sort: list[any], ascending: bool = True) -> list[any]:
             otherwise descending
 
     Returns -> list[any] sorted list 
-        """
+
+    >>> merge_sort([])
+    []
+
+    >>> merge_sort([3,2])
+    [2,3]
+
+    >>> merge_sort([1,5,10,2,22],ascending = False)
+    [22,10,5,2,1]
+    
+    
+    """
 
     if len(list_to_sort) == 0:
         return []
