@@ -1,17 +1,21 @@
+#!/usr/bin/env python
+
 """
 Heap sorting algorythm implementation  
 Created on 1/17/2024
-@author: Vlad421
 """
+__author__ = "Vlad421"
 
 
-def heap_sort(array: list[any], is_ascending: bool = True) -> None:
+def heap_sort(array_to_sort: list[any], is_ascending: bool = True) -> list[any]:
     """Sorts a list using heap_sort algorithm, mutate given list
 
     Parameters:
-        array: list[any] - List of items to sort
+        array_to_sort: list[any] - List of items to sort
         ascending:bool=True - If True (by default) list will be sorted in ascending order, 
             otherwise descending
+
+    Returns -> list[any] sorted list    
 
     >>> heap_sort([])
     []
@@ -19,6 +23,19 @@ def heap_sort(array: list[any], is_ascending: bool = True) -> None:
     [3, 5, 8, 15, 19]
     >>> merge_sort([1,12,9,20,6], False)
     [20, 12, 9, 6, 1] """
+
+    assert isinstance(array_to_sort, (list, tuple)
+                      ), "array_to_sort must be list or tuple"
+
+    if len(array_to_sort) > 0:
+
+        previous_element = array_to_sort[0]
+        for e in range(len(array_to_sort)):
+            if type(previous_element) != type(array_to_sort[e]):
+                raise TypeError("Array data types mismatch")
+            previous_element = array_to_sort[e]
+
+    array: list = list(array_to_sort)
 
     def swap(i: int, j: int):
         """swap 2 elements in list"""
@@ -69,3 +86,5 @@ def heap_sort(array: list[any], is_ascending: bool = True) -> None:
         # swap root and last element, then min or max
         swap(0, i)
         heapify(0, i)
+
+    return array

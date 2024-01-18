@@ -1,3 +1,4 @@
+from heap_sort import heap_sort
 import unittest
 
 import os
@@ -5,8 +6,6 @@ import sys
 
 file_dir = os.path.dirname(os.path.dirname(__file__))
 sys.path.append(file_dir + "/src")
-
-from heap_sort import heap_sort
 
 
 class TestHeapSortV1(unittest.TestCase):
@@ -39,6 +38,18 @@ class TestHeapSortV1(unittest.TestCase):
         result = [1, 2, 3, 4, 5]
 
         self.assertEqual(heap_sort(array), result)
+
+    def test_wrong_type(self):
+        dic = {1: 'a', 2: 'b'}
+
+        with self.assertRaises(AssertionError):
+            heap_sort(dic)
+
+    def test_array_data_mixed_types(self):
+        data = (10, 5, 8, 'a', 9, 'b')
+
+        with self.assertRaises(TypeError):
+            heap_sort(data)
 
 
 if __name__ == "__main__":
