@@ -41,11 +41,13 @@ def merge_sort(list_to_sort: list[any], ascending: bool = True) -> list[any]:
     # I will not test all items compatibility,
     # I will assert first element for allowing comparison methods (< > <= >=)
 
-    if not (hasattr(list_to_sort[0], '__lt__') and
-            hasattr(list_to_sort[0], '__le__') and
-            hasattr(list_to_sort[0], '__gt__') and
-            hasattr(list_to_sort[0], '__ge__')):
-        raise TypeError("Items of list are not compatible for sorting")
+    # if not (hasattr(list_to_sort[0], '__lt__') and
+    #         hasattr(list_to_sort[0], '__le__') and
+    #         hasattr(list_to_sort[0], '__gt__') and
+    #         hasattr(list_to_sort[0], '__ge__')):
+    #     raise TypeError("Items of list are not compatible for sorting")
+
+    # I just leave try-except block later on (in merge helper function)
 
     def helper_merge(list1, list2) -> list:
         """Helper function for merging two lists, based on ascending parameter
@@ -79,7 +81,7 @@ def merge_sort(list_to_sort: list[any], ascending: bool = True) -> list[any]:
                 # ISSUE - how whoul it be best - to raise Assertion, or to raise TypeError instead
                 # (and then change it in the start assertions)
                 raise TypeError(
-                    "Items of list are not compatible for sorting") from exc
+                    f"Items of list are not compatible for sorting:{exc}") from exc
         # add the one list left
         result_list += list1[i:]+list2[j:]
         return result_list
