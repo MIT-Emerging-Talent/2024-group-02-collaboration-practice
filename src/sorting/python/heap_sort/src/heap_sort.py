@@ -5,7 +5,7 @@ Created on 1/17/2024
 """
 
 
-def heap_sort(array: list[any], is_ascending: bool = True):
+def heap_sort(array: list[any], is_ascending: bool = True) -> None:
     """Sorts a list using heap_sort algorithm, mutate given list
 
     Parameters:
@@ -25,13 +25,13 @@ def heap_sort(array: list[any], is_ascending: bool = True):
         array[i], array[j] = array[j], array[i]
 
     def heapify(root: int, size: int):
-        """ builds maxheap or minheap tree 
+        """ Builds maxheap or minheap tree 
 
         Parameters:
             root:int - index of root element
             size:int - size or upper bound of number elements """
 
-        # assume root is largest, adn find child indexes
+        # find child indexes
         swap_index: int = root
         child_left: int = root*2+1
         child_right: int = root*2+2
@@ -52,7 +52,7 @@ def heap_sort(array: list[any], is_ascending: bool = True):
             if child_right < size and array[swap_index] > array[child_right]:
                 swap_index = child_right
 
-        # check if root is the largest, if not swap values in array and make recurcive call
+        # check if root is the largest, if not swap values in array and make recursive call
         if swap_index != root:
             swap(root, swap_index)
             heapify(swap_index, size)
@@ -66,6 +66,6 @@ def heap_sort(array: list[any], is_ascending: bool = True):
     # sorting
     for i in range(array_size-1, 0, -1):
 
-        # swap root and last element, then min o max
+        # swap root and last element, then min or max
         swap(0, i)
         heapify(0, i)
