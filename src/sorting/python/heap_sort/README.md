@@ -3,4 +3,6 @@ Author: Vlad421
 
 Implementation of heap sort algorithm
 
-Function mutate given List. Available ascending and descending order
+Function returns sorted List. Available ascending and descending order by passing second argument. 
+Default - ascending, False - descending
+
