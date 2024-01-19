@@ -36,18 +36,10 @@ def merge_sort(list_to_sort: list[any], ascending: bool = True) -> list[any]:
     if len(list_to_sort) == 0:
         return []
 
+    # checks for type
     assert isinstance(list_to_sort, (list, tuple)
                       ), "list_to_sort must be list or tuple"
-    # I will not test all items compatibility,
-    # I will assert first element for allowing comparison methods (< > <= >=)
 
-    # if not (hasattr(list_to_sort[0], '__lt__') and
-    #         hasattr(list_to_sort[0], '__le__') and
-    #         hasattr(list_to_sort[0], '__gt__') and
-    #         hasattr(list_to_sort[0], '__ge__')):
-    #     raise TypeError("Items of list are not compatible for sorting")
-
-    # I just leave try-except block later on (in merge helper function)
 
     def helper_merge(list1, list2) -> list:
         """Helper function for merging two lists, based on ascending parameter
