@@ -1,25 +1,25 @@
-def quick_sort(iterable):
+from typing import Iterable, List, Union, Tuple, Set
+def quick_sort(iterable: Union[List[int], Tuple[int, ...], Set[int], str]) -> List[Union[int, str]]:
     """Sorts an iterable (list, tuple, set, or any object that behaves like iterable).
     
     If the input is not a list, it is converted to a list and assigned to the 'sequence' variable.
     
     Parameters:
-        iterable: Iterable object to be sorted.
-        
-    Returns:
-        list: Sorted list.
-        quick_sort([3,2,5,7])
-        return=[2,3,5,7]
-        quick_sort(("back"))
-        return 'a','b', 'c', 'k' """
+    iterable (Union[List[Union[int, str]], Tuple[Union[int, str], ...], Set[Union[int, str]], str]):
+            Iterable object to be sorted.
 
-    try:
-        if isinstance(iterable, str):
-            sequence = list(iterable)
-        else:
-            sequence= list(iterable)
-    except TypeError:
-        raise TypeError("Input must be convertible to a list")
+    quick_sort.py, This module provides a function to perform QuickSort on an iterable.
+    Usage:
+    from quick_sort import quick_sort
+        
+    Returns:List[Union[int, str]]: The sorted listiterable
+        >>>quick_sort([3,2,5,7])
+        [2,3,5,7]
+        >>>quick_sort(("back"))
+        ['a','b', 'c', 'k'] """
+
+    assert isinstance(iterable, (str, list, tuple, set)), "Input must be convertible to a list"
+    sequence = list(iterable)
     seq_len= len(sequence)
     #if the list has 1 element or is empty it will be already sorted
     if seq_len <=1:  
