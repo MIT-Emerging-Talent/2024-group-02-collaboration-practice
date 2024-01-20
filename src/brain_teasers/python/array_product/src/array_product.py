@@ -34,4 +34,3 @@ def array_product(arr:list[int]) -> list[int]:
 
     return new_arr
 
-
