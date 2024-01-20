@@ -1,8 +1,12 @@
 import unittest
 
+import os,sys
 
-from src.can_sum import can_sum_basic, can_sum_memo, can_sum_table
+file_dir = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(file_dir + "/src")
 
+
+from can_sum import can_sum_basic, can_sum_memo, can_sum_table
 
 class TestCanSumBasic(unittest.TestCase):
     def test_negative(self):
