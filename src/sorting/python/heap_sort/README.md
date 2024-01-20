@@ -1,4 +1,4 @@
-Merge sort implementation
+Heap sort implementation
 Author: Vlad421
 
 Implementation of heap sort algorithm

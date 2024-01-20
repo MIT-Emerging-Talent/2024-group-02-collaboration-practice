@@ -1,7 +1,13 @@
-from src.linked_list import LinkedList
 from unittest import TestCase
 import unittest
 
+import os
+import sys
+
+file_dir = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(file_dir + "/src")
+
+from linked_list import LinkedList
 
 class TestLinkedList(TestCase):
     def test_empty_linked_list(self):
