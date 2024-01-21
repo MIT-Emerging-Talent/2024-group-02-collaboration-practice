@@ -1,14 +1,17 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Python Version: 3.12
+"""
+File: heap_sort.py
+Author: Vlad421
+Date: 1/17/2024
 
+Description: Heap sorting algorythm implementation
 """
-Heap sorting algorythm implementation  
-Created on 1/17/2024
-"""
-__author__ = "Vlad421"
 
 
 def heap_sort(array_to_sort: list[any], is_ascending: bool = True) -> list[any]:
-    """Sorts a list using heap_sort algorithm, mutate given list
+    """Sorts a list using heap_sort algorithm, returns sorted List
 
     Parameters:
         array_to_sort: list[any] - List of items to sort

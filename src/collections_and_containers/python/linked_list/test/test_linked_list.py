@@ -1,7 +1,13 @@
-from src.linked_list import LinkedList
 from unittest import TestCase
 import unittest
 
+import os
+import sys
+
+file_dir = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(file_dir + "/src")
+
+from linked_list import LinkedList
 
 class TestLinkedList(TestCase):
     def test_empty_linked_list(self):
@@ -104,6 +110,15 @@ class TestLinkedList(TestCase):
         self.assertEqual(linked_list.size(), 3)
         self.assertEqual(linked_list.front(), 1)
         self.assertEqual(linked_list.back(), 3)
+        
+    def test_remove_error_check(self):
+        linked_list = LinkedList()
+        linked_list.push_back(1)
+        linked_list.push_back(2)
+        linked_list.push_back(3)
+        linked_list.remove(2)
+        self.assertEqual(linked_list._LinkedList__data[0].value, 1)
+        self.assertEqual(linked_list._LinkedList__data[0].next.value, 3)
 
 
 if __name__ == "__main__":
