@@ -21,15 +21,22 @@
 | --- | :-: | ----------------------- |
 |     |     |                         |
 
+prpopose 
+**Monday/Tuesday** - short meet up, as on Monday we will have the workshop, and will get info on our tasks
+                so we may make a short call for brief discussion and tasks delegation
+**Thursday** - middle of the week, we will have some work done, some requires attention
+**Friday** - may schedule a meet with Evan (decide on Monday), for help
+
+
 ## Communication Channels
 
 how often will we get in touch on each channel, and what we will discuss there:
 
-- **Issues**:
-- **Pull Requests**:
+- **Issues**: the work 
+- **Pull Requests**: Concerning pull request and code
 - **GitHub Discussions**
-- **Slack/Discord**:
-- **Video Calls**:
+- **Slack/Discord**: General communication on group matters, Project discussion
+- **Video Calls**: Brainstorms, Problem solving
 
 ---
 
@@ -37,14 +44,31 @@ how often will we get in touch on each channel, and what we will discuss there:
 
 ### Availability for calling/messaging
 
+
+We will use EST time zone here
+Time when we have MIT Emerging Talent Workshops are out of considertaion
+
+
 | Day    | Monday  | Tuesday | Wednesday | Thursday | Friday  | Saturday | Sunday  |
 | ------ | :-----: | :-----: | :-------: | :------: | :-----: | :------: | :-----: |
-| _name_ | 13 - 20 | 13 - 20 |  13 - 20  | 13 - 20  | 13 - 20 | 13 - 20  | 13 - 20 |
+| _name_ |         |         |           |          |         |          |         |
+| Denys* | 03 - 11 | 03 - 11 |  03 - 10  | 03 - 17  | 03 - 13 | 03 - 05  |    -    | 
+| _name_ |         |         |           |          |         |          |         |
+| _name_ |         |         |           |          |         |          |         |
+| _name_ |         |         |           |          |         |          |         |
+| _name_ |         |         |           |          |         |          |         |
+
+
+
+Notes:
+*Denys: sometimes I have additional free time, but it depends. 
+
+
 
 ### How many hours everyone has per day:
 
-- name: _5h_; extra comments?
-- name: _6h_;
+- Denys: 5h; 
+- name: _6h_;extra comments?
 - name: _5h_;
 - name: _4h_;
 - name: _3h_;
