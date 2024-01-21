@@ -68,7 +68,7 @@ def can_sum_table(number: int, arr: list[int]) -> bool:
     >>> can_sum_table([2,1,1,5],10)
     False """
 
-    table = [False] * (number + 1)
+    table:list[int] = [False] * (number + 1)
 
     table[0] = True
 
