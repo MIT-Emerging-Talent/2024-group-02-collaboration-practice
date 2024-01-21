@@ -71,7 +71,7 @@ class LinkedList:
         if not self.empty():
 
             if self.__number_of_elements > 1:
-                #clearing reference to next element
+                # clearing reference to next element
                 self.__data[-2].next = None
             self.__data.pop()
             self.__number_of_elements -= 1
@@ -87,15 +87,16 @@ class LinkedList:
         if not self.empty():
 
             counter: int = 0
-            pointer: self.Node = self.__data[counter]
-            
+            pointer: self.Node = self.__data[counter].next
+            current: self.Node = 0
             # Iterating thru nodes
-            while pointer.next != None:
-                # comparing values of nodes 
-                if pointer.value == element:
+            while pointer != None:
+                current = self.__data[counter]
+                # comparing values of nodes
+                if current.value == element:
 
                     if counter-1 > -1:
-                        #Change referense to next element
+                        # Change referense to next element
                         self.__data[counter-1].next = pointer
 
                     self.__data.pop(counter)
@@ -104,8 +105,3 @@ class LinkedList:
                 else:
                     counter += 1
                     pointer = pointer.next
-
-            counter += 1
-
-
-
