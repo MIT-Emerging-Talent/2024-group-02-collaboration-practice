@@ -53,7 +53,7 @@ Time when we have MIT Emerging Talent Workshops are out of considertaion
 | ------ | :-----: | :-----: | :-------: | :------: | :-----: | :------: | :-----: |
 | _name_ |         |         |           |          |         |          |         |
 | Denys* | 03 - 11 | 03 - 11 |  03 - 10  | 03 - 17  | 03 - 13 | 03 - 05  |    -    | 
-| _name_ |         |         |           |          |         |          |         |
+| _Eric_ |    11-03     |  11-03       |     11-03      |     11-03     |       08-11  |          05-11|         |
 | _name_ |         |         |           |          |         |          |         |
 | _name_ |         |         |           |          |         |          |         |
 | _name_ |         |         |           |          |         |          |         |
@@ -61,14 +61,15 @@ Time when we have MIT Emerging Talent Workshops are out of considertaion
 
 
 Notes:
-*Denys: sometimes I have additional free time, but it depends. 
+* Denys: sometimes I have additional free time, but it depends. 
+* Eric: I will be available on Saturdays from the morning (2-11) till afternoon.
 
 
 
 ### How many hours everyone has per day:
 
 - Denys: 5h; 
-- name: _6h_;extra comments?
+- Eric: _3h_;
 - name: _5h_;
 - name: _4h_;
 - name: _3h_;
