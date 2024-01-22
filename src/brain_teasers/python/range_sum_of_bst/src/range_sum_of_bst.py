@@ -9,7 +9,7 @@ def range_sum_of_bst(root, low, high):
     if root is None:
         return 0
 
-    # Passover the Bianary Search Tree (BST) using DFS (Depth-First Search)
+    # Traverse the BST using DFS (Depth-First Search)
     stack = [root]
     total_sum = 0
 
@@ -20,7 +20,7 @@ def range_sum_of_bst(root, low, high):
             if low <= node.value <= high:
                 total_sum += node.value
 
-            # Add right branch first, then left branch (to mimic in-order traversal)
+            # Add right child first, then left child (to mimic in-order traversal)
             stack.append(node.right)
             stack.append(node.left)
 
