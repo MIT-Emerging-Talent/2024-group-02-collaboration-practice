@@ -2,6 +2,10 @@
 
 # Constraints
 
+Language: Python
+Platform for repository: [GitHub](https://github.com/MIT-Emerging-Talent/2024-group-02-collaboration-practice)
+Project Board: [GitHub Project](https://github.com/orgs/MIT-Emerging-Talent/projects/19/views/1)
+
 
 ## Naming conventions:
 
@@ -19,24 +23,26 @@
     class MyClass:
       # class scope
 
-    
+    # We are try to use Type Notaion, declaring variables, like that:
     # This way everyone will know, includes interpreter the variable my_var has type of MyClass
+
     my_var:MyClass = MyClass()
+    counter:int = 1
 
 
-    # func do_some has a parameter of integer and string, and MyClass
-    def do_some(number, word, variable):
-      # do something
-    
-    If we will leave it as is someone could pass to number say float, and program will throw an error, and it will require some debugging, etc.
+    # We are declaring function parameters using Type Notaion, like that:
 
-    This is why declaring func parameters we should notate types of parameters like that
-    
     def do_some(number:int, word:str, variable:MyClass) -> None:
       # do something, no return
 
     def do_some(number:int, word:str, variable:MyClass) -> float:
       # do something, return something
+
+    def some_function(list_of_ints:list[int],)
+
+    
+
+
 
 
 
