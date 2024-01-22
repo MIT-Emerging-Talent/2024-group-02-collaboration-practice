@@ -164,6 +164,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.venv_cdsp
 
 # Spyder project settings
 .spyderproject
