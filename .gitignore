@@ -159,6 +159,7 @@ ipython_config.py
 # Environments
 .env
 .venv
+.venv*_cdsp
 env/
 venv/
 ENV/
