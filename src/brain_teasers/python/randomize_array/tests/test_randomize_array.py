@@ -1,6 +1,11 @@
 import unittest
 
-from src.randomize_array import randomize_array
+import os,sys
+
+file_dir = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(file_dir + "/src")
+
+from randomize_array import randomize_array
 
 
 class TestRandomizeArray(unittest.TestCase):
