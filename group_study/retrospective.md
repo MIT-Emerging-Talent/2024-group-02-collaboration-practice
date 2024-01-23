@@ -6,20 +6,17 @@
 
 ## Stop Doing
 
-### *Denys:*
-Before our last year workshop my workflow was like this:
+*Denys:* Before our last year workshop my workflow was like this:
 **-WRITING CODE-sandbox text-confusion in case of errors-corrections-TASK DONE**
 Now I am really grateful I can do it much more pleasant and efficient way! 
 
 ## Continue Doing
 
-### *Denys:*
-Things we learned last year
+*Denys:* Things we learned last year
 
 ## Start Doing
 
-### *Denys:*
-1. My first deep introduction to GitHub collaborative workflow - and I really love it. I will surely use this approach in the future.
+*Denys:* 1. My first deep introduction to GitHub collaborative workflow - and I really love it. I will surely use this approach in the future.
 2. Systematic approach to writing code. 
 **Making issue - separate branch - writing README** --- this steps was new, 
 and after them the steps i learned last year:
@@ -32,8 +29,7 @@ And it's amaising.
 
 ## Lessons Learned
 
-### *Denys:*
-1. Collaboration is not the easy task, and it have many aspects. But it certanly worth it!
+*Denys:* 1. Collaboration is not the easy task, and it have many aspects. But it certanly worth it!
 2. Following the descibed stategy: just WRITING CODE vs systematic approach - are much better. 
 Really when I come to the step of writing code, if I follow this workflow, 
 in many cases I already know what and how to writegi
