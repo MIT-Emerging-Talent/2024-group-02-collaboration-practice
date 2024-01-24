@@ -1,6 +1,14 @@
-from src.vector import Vector
+
 from unittest import TestCase
 import unittest
+
+import os
+import sys
+
+file_dir = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(file_dir + "/src")
+
+from vector import Vector
 
 
 class TestVector(TestCase):
@@ -52,11 +60,13 @@ class TestVector(TestCase):
 
     def test_back_when_empty(self):
         vector = Vector()
-        self.assertRaises(IndexError, vector.back)
+        with self.assertRaises(IndexError): 
+            vector.back()
 
     def test_pop_back_when_empty(self):
         vector = Vector()
-        self.assertRaises(IndexError, vector.pop_back)
+        with self.assertRaises(IndexError): 
+            vector.pop_back()
 
     def test_resize(self):
         vector = Vector()
@@ -67,7 +77,8 @@ class TestVector(TestCase):
         self.assertEqual(vector.size(), 2)
         self.assertEqual(vector[0], 1)
         self.assertEqual(vector[1], 2)
-        self.assertRaises(IndexError, vector.__getitem__, 2)
+        with self.assertRaises(IndexError): 
+            vector.__getitem__(2), 2
 
     def test_resize_when_empty(self):
         vector = Vector()
@@ -75,7 +86,8 @@ class TestVector(TestCase):
         self.assertEqual(vector.size(), 2)
         self.assertEqual(vector[0], None)
         self.assertEqual(vector[1], None)
-        self.assertRaises(IndexError, vector.__getitem__, 2)
+        with self.assertRaises(IndexError): 
+            vector.__getitem__(2), 2
 
     def test_clear(self):
         vector = Vector()
@@ -84,3 +96,7 @@ class TestVector(TestCase):
         vector.push_back(3)
         vector.clear()
         self.assertTrue(vector.empty())
+
+
+if __name__ == "__main__":
+    unittest.main()
